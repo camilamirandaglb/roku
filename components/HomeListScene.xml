@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2016 Roku Corp.  All Rights Reserved. -->
+<component name="HomeListScene" extends="Scene">
+    <children >
+      <Overhang
+          showClock="true"
+          title="Week Two and Week Three Training" />
+      <HomeList
+        id = "homeList"
+        translation = "[ 130, 160 ]"
+        itemComponentName = "HomeListItem"
+        numRows = "4"
+        itemSize = "[ 1608, 308 ]"
+        rowItemSize = "[ [536, 308] ]"
+        itemSpacing = "[ 0, 40 ]"
+        showRowLabel = "[ true ]"
+        drawFocusFeedback = "false"
+        vertFocusAnimationStyle = "fixedFocusWrap"
+        rowFocusAnimationStyle = "fixedFocusWrap"
+        visible = "true" />
+
+      </children>
+      <script type="text/brightscript" uri="pkg:/components/HomeListScene.brs"/>
+</component>

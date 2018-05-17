@@ -1,0 +1,136 @@
+{
+    "Drama": {
+        "title": "Drama",
+        "items": [
+            {
+                "title": "20,000 Leagues Under The Sea",
+                "subtitle": "PG   December 1916   105min",
+                "description": "20,000 Leagues Under the Sea is a 1916 silent film directed by Stuart Paton. The film's storyline is based on the novel Twenty Thousand Leagues Under the Sea by Jules Verne. It also incorporates elements from Verne's The Mysterious Island.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_960,h_540/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/20k-leagues-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/x4ODJ0djpvuBOylP-BYYsntDA1LwE1bx.m3u8"
+            },
+            {
+                "title": "Cinema Paradiso",
+                "subtitle": "",
+                "description": "A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_960,h_540/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/cinema-paradiso-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/YzMmF4djrKcC83bAkZM82dbdjwrF22sb.m3u8"
+            },
+            {
+                "title": "Diane Birch: Speak a Little Louder",
+                "subtitle": "3:46",
+                "description": "Throughout this new record, she lays bare the emotional rollercoaster of her life over the past couple of years; coping with heartbreak at the end of a long-lasting relationship, the pain of losing her father to cancer, and her dance with the light and dark of self on the road to womanhood.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_960,h_540/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/diane-birch-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/RkOTl4djoR0qK4tnNXYUMn_ANVXtVX5V.m3u8"
+            },
+            {
+                "title": "Dolphin Diary",
+                "subtitle": "6:43",
+                "description": "Jody McGrath and her family are sailing around the world researching dolphins, and Jody records all their exciting adventures in her Dolphin Diaries.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_960,h_540/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/dolphin-diary-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/xpNWN4djo8KCA77uUBx9rrJvovzcXR94.m3u8"
+            }
+        ]
+    },
+    "Horror": {
+        "title": "Horror",
+        "items": [
+            {
+                "title": "His Girl Friday",
+                "subtitle": "PG   January 1940   92min",
+                "description": "This was the second time the play had been adapted for the screen, the first occasion being the 1931 film also called The Front Page. The major change in this version, introduced by Hawks, is that the role of Hildy Johnson is a woman.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/his-girl-friday-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/lwMWh0djqEpzsCyXGubmSpeYZZUZkf8a.m3u8"
+            },
+            {
+                "title": "Sita Sings The Blues",
+                "subtitle": "R   August 2009   82min",
+                "description": "Sita Sings the Blues is a 2008 animated film written, directed, produced and animated by American artist Nina Paley.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/404.jpg",
+                "video": "http://player.ooyala.com/player/iphone/k2N2V4djocW02oPCLW-J4Zz00KpXYgmW.m3u8"
+            },
+            {
+                "title": "Parable In The Lake",
+                "subtitle": "R   May 2014   89min",
+                "description": "So when you are in pain, the only thing you can do is to enlarge your sense of things...stop being a glass. Become a lake.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/dummy-444x260-08.jpg",
+                "video": "http://player.ooyala.com/player/iphone/1wN3h4djqFX4BANFVnTibUiO7-j0t97Z.m3u8"
+            },
+            {
+                "title": "Buffoon Lives With Me",
+                "subtitle": "",
+                "description": "A buffoon is someone whose ridiculous behavior is a source of amusement to others.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/dummy-444x260-10.jpg",
+                "video": "http://player.ooyala.com/player/iphone/1wN3h4djqFX4BANFVnTibUiO7-j0t97Z.m3u8"
+            },
+            {
+                "title": "20,000 Leagues Under The Sea",
+                "subtitle": "PG   December 1916   105min",
+                "description": "20,000 Leagues Under the Sea is a 1916 silent film directed by Stuart Paton. The film's storyline is based on the novel Twenty Thousand Leagues Under the Sea by Jules Verne. It also incorporates elements from Verne's The Mysterious Island.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/20k-leagues-poster-lg.jpg",
+                "video": "http://player.ooyala.com/player/iphone/x4ODJ0djpvuBOylP-BYYsntDA1LwE1bx.m3u8"
+            }
+        ]
+    },
+    "Action": {
+        "title": "Action",
+        "items": [
+            {
+                "title": "The Gunmen",
+                "description": "Little Joe and Hoss, mistaken for gunmen, get caught between feuding families.",
+                "subtitle": "Season 1 - Episode 19",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e19-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/1jZDdpMjE6N1OY1mDejavdcH-cDPwpOg.m3u8"
+            },
+            {
+                "title": "The Fear Merchants",
+                "subtitle": "Season 1 - Episode 20",
+                "description": "The Cartwrights come to the aid of a Chinese-American stable hand accused of murder.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e20-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/51cjdpMjE693L2ZaKPw0Olr32_QjBiu9.m3u8"
+            },
+            {
+                "title": "The Spanish Grant",
+                "subtitle": "Season 1 - Episode 21",
+                "description": "A former dance hall girl poses as a Spanish heiress to claim a land grant that includes part of the Ponderosa.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e21-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/53cjdpMjE6PpeGTtuhFPE9tH_4LtJVfk.m3u8"
+            },
+            {
+                "title": "Desert Justice",
+                "subtitle": "Season 1 - Episode 22",
+                "description": "A Ponderosa ranch hand faces charges of killing the wife of the U.S. marshal who came to arrest him.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e22-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/55cjdpMjE6B-FwznMVhPwQJ1mAfGCi13.m3u8"
+            },
+            {
+                "title": "Saloon Doors",
+                "subtitle": "Season 2 - Episode 1",
+                "description": "When a mysterious stranger enters town, the townsfolk fear something bad is about to happen.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e20-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/1jZDdpMjE6N1OY1mDejavdcH-cDPwpOg.m3u8"
+            },
+            {
+                "title": "Boot & Spurs",
+                "subtitle": "Season 2 - Episode 2",
+                "description": "Little Joe finds that big boots are hard to fill.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e22-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/51cjdpMjE693L2ZaKPw0Olr32_QjBiu9.m3u8"
+            },
+            {
+                "title": "Two Shots of Whiskey",
+                "subtitle": "Season 2 - Episode 3",
+                "description": "A down-on-his-luck drifter arrives on the Ponderosa with the law close behind.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e19-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/53cjdpMjE6PpeGTtuhFPE9tH_4LtJVfk.m3u8"
+            },
+            {
+                "title": "High Lonesome",
+                "subtitle": "Season 2 - Episode 4",
+                "description": "Hoss mourns the loss of his one true love, but learns a lesson about the power of forgivenss.",
+                "image": "http://res.cloudinary.com/djgi5zclb/image/fetch/c_fill,g_center,w_384,h_216/http://devreflector.weareratio.com/resources/ratiotv/dummy-images/bonanza-s01e21-poster.jpg",
+                "video": "http://player.ooyala.com/player/iphone/55cjdpMjE6B-FwznMVhPwQJ1mAfGCi13.m3u8"
+            }
+        ]
+    }
+}
