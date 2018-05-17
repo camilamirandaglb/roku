@@ -1,6 +1,6 @@
 {
-    "featured": {
-        "title": "Featured",
+    "drama": {
+        "title": "Drama",
         "items": [
             {
                 "title": "20,000 Leagues Under The Sea",
@@ -32,8 +32,8 @@
             }
         ]
     },
-    "recent": {
-        "title": "Recently Added",
+    "horror": {
+        "title": "Horror",
         "items": [
             {
                 "title": "His Girl Friday",
@@ -72,8 +72,8 @@
             }
         ]
     },
-    "bonanza": {
-        "title": "Bonanza",
+    "action": {
+        "title": "Action",
         "items": [
             {
                 "title": "The Gunmen",

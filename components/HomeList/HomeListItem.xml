@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HomeListItem" extends="Group" >
+    <interface>
+        <field id= "itemContent" type= "node" onChange= "showItemDataChanged"/>
+    </interface>
+    <children>
+      <LayoutGroup layoutDirection="vert" vertAlignment="top" itemSpacings="20" translation="[0,0]" >
+          <Poster id="itemPoster" translation="[0,0]">
+          </Poster>
+          <Label id="itemLabel" horizAlign="center" translation="[0,0]" />
+      </LayoutGroup>
+    </children>
+    <script type="text/brightscript" uri="pkg:/components/HomeList/HomeListItem.brs"/>
+</component>

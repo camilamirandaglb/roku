@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HomeScene" extends="Scene" >
+    <interface>
+        <field id="rowListContent" type="node" onchange="rowListContentChanged"/>
+    </interface>
+  <children>
+      <Overhang showClock="true" title= "Week Two Training"/>
+      <HomeList
+        id= "homeList"
+        translation= "[ 130, 160 ]"
+        itemComponentName= "HomeListItem"
+        numRows= "4"
+        itemSize= "[ 1608, 308 ]"
+        rowItemSize= "[ [536, 308] ]"
+        itemSpacing= "[ 0, 40 ]"
+        showRowLabel= "[ true ]"
+        drawFocusFeedback= "false"
+        vertFocusAnimationStyle= "fixedFocusWrap"
+        rowFocusAnimationStyle= "fixedFocusWrap"
+        visible="true" />
+          <Video
+            id="myVideo"
+            width="1920"
+            height="1080"
+            visible="false" />
+    </children>
+  <script type="text/brightscript" uri="pkg:/components/HomeScene.brs"/>
+</component>
