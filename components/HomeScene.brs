@@ -3,70 +3,24 @@ sub init()
     m.dataloader = CreateObject("roSGNode","DataLoaderTask")
     m.dataloader.observeField("data", "onChangeData")
     m.dataloader.control="RUN"
+    m.homelist.itemSize = [ 535, 300 ]
+    m.homelist.rowFocusAnimationStyle = "floatingfocus"
+    m.homelist.showRowLabel= true
+    m.homelist.rowItemSize = "[ [535, 300] ]"
+    m.homelist.setfocus(true)
+
 end sub
 
 sub onChangeData()
-  print "onchangedata"
-  print m.dataloader.data
   if m.dataloader.data <> invalid
     showCategories()
   end if
 end sub
 
 sub showCategories()
-  print "show categories"
-  ' ContentNode= CreateObject("roSGNode","ContentNode") 'nodo padre'
-  '
-  ' drama_row= contentNode.CreateChild("ContentNode") 'nodo hijo'
-  ' drama_row.title = m.dataloader.data["drama"].title
-  ' print drama_row.title
-  ' for each video in m.dataloader.data["drama"].items
-  '     createVideoItemData(video, drama_row)
-  ' end for
-  '
-  ' horror_row = contentNode.CreateChild("ContentNode") 'nodo hijo'
-  '
-  ' for each video in m.dataloader.data["horror"].items
-  '     createVideoItemData(video, horror_row)
-  ' end for
-  '
-  ' action_row = contentNode.CreateChild("ContentNode") 'nodo hijo'
-  '
-  ' for each video in m.dataloader.data["action"].items
-  '     createVideoItemData(video, action_row)
-  ' end for
-  ' m.homelist.content = contentNode
-  ' m.homelist.SetFocus(true)
-
-  contentNode = CreateObject("roSGNode", "ContentNode")
-
-    dramaNode = contentNode.CreateChild("ContentNode")
-    for each video in m.dataloader.data["drama"].items
-            createVideoItemData(video, dramaNode)
-    end for
-
-    for each category in m.dataLoader.data
-        if category <> "drama"
-            node = contentNode.CreateChild("ContentNode")
-            for each video in m.dataloader.data[category].items
-                createVideoItemData(video,node)
-            end for
-        end if
-    end for
-
-    m.homelist.SetFocus(true)
-    m.homelist.content = contentNode
-
+    m.homelist.content = m.dataloader.data
 end sub
 
-sub createVideoItemData(video, node)
-  print "createVideo"
-    item = node.CreateChild("HomeListItemData")
-    item.title = video.title
-    item.poster = video.image
-    item.description = video.description
-    item.video = node.video
-end sub
 
 function playVideo() as void
  print "play video"
