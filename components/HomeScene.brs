@@ -3,10 +3,10 @@ sub init()
     m.dataloader = CreateObject("roSGNode","DataLoaderTask")
     m.dataloader.observeField("data", "onChangeData")
     m.dataloader.control="RUN"
-    m.homelist.itemSize = [ 535, 300 ]
     m.homelist.rowFocusAnimationStyle = "floatingfocus"
-    m.homelist.showRowLabel= true
-    m.homelist.rowItemSize = "[ [535, 300] ]"
+    m.homelist.rowLabelOffset = [ [0, 20], [0, 20], [0, 20] ]
+    m.homelist.showRowLabel = [true, true, true]
+    m.homelist.rowItemSize = [ [536, 308], [536, 308], [536, 308] ]
     m.homelist.setfocus(true)
 
 end sub

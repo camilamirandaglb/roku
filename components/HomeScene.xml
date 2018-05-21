@@ -8,16 +8,17 @@
       <HomeList
         id= "homeList"
         itemComponentName= "HomeListItem"
-        translation= "[ 130 , 160 ]"
-        rowItemSize = "[ [535, 300] ]"
-        itemSpacing= "[ 0, 40 ]"
-        rowItemSpacing= "[[50, 0]]"
+        translation="[130,120]"
+        itemSize = "[ 1200, 900 ]"
+        rowItemSize = "[ [536, 308] ]"
+        rowItemSpacing = "[ [30, 0], [30, 0], [30, 0] ]"
         showRowLabel= "[ true ]"
         drawFocusFeedback= "true"
         vertFocusAnimationStyle = "fixedFocusWrap"
         rowFocusAnimationStyle = "fixedFocusWrap"
+        showRowCounter="[true]"
         visible="true"
-        showRowCounter="[true]" />
+       />
 
       <Video
             id="myVideo"

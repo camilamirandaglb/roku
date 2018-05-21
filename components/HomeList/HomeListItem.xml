@@ -6,10 +6,10 @@
     </interface>
     <children>
       <LayoutGroup layoutDirection="vert" vertAlignment="top" translation="[0, 0]">
-          <Poster id="itemPoster" translation="[0,0]" width="535" height="300">
+          <Poster id="itemPoster" translation="[0,0]" width="500" height="290">
           </Poster>
-          <Label id="itemLabel" translation = "[ 20, 264 ]" horizAlign = "right" width = "492" opacity = "0.0"/>
-      
+          <Label id="itemLabel"  height="60" width="0" horizAlign = "left" vertAlign = "center" translation="[318,8]" />
+
       </LayoutGroup>
     </children>
     <script type="text/brightscript" uri="pkg:/components/HomeList/HomeListItem.brs"/>
