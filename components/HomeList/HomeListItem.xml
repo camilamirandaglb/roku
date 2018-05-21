@@ -2,12 +2,14 @@
 <component name="HomeListItem" extends="Group" >
     <interface>
         <field id= "itemContent" type= "node" onChange= "showItemDataChanged"/>
+        <field id = "focusPercent" type = "float" onChange = "showfocus" />
     </interface>
     <children>
-      <LayoutGroup layoutDirection="vert" vertAlignment="top" itemSpacings="20" translation="[0,0]" >
-          <Poster id="itemPoster" translation="[0,0]">
+      <LayoutGroup layoutDirection="vert" vertAlignment="top" translation="[0, 0]">
+          <Poster id="itemPoster" translation="[0,0]" width="500" height="290">
           </Poster>
-          <Label id="itemLabel" horizAlign="center" translation="[0,0]" />
+          <Label id="itemLabel"  height="60" width="0" horizAlign = "left" vertAlign = "center" translation="[318,8]" />
+
       </LayoutGroup>
     </children>
     <script type="text/brightscript" uri="pkg:/components/HomeList/HomeListItem.brs"/>

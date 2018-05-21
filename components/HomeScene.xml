@@ -4,21 +4,23 @@
         <field id="rowListContent" type="node" onchange="rowListContentChanged"/>
     </interface>
   <children>
-      <Overhang showClock="true" title= "Week Two Training"/>
+      <Overhang showClock="true" title= "Week Two Training" optionsAvailable = "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
       <HomeList
         id= "homeList"
-        translation= "[ 130, 160 ]"
         itemComponentName= "HomeListItem"
-        numRows= "4"
-        itemSize= "[ 1608, 308 ]"
-        rowItemSize= "[ [536, 308] ]"
-        itemSpacing= "[ 0, 40 ]"
+        translation="[130,120]"
+        itemSize = "[ 1200, 900 ]"
+        rowItemSize = "[ [536, 308] ]"
+        rowItemSpacing = "[ [30, 0], [30, 0], [30, 0] ]"
         showRowLabel= "[ true ]"
-        drawFocusFeedback= "false"
-        vertFocusAnimationStyle= "fixedFocusWrap"
-        rowFocusAnimationStyle= "fixedFocusWrap"
-        visible="true" />
-          <Video
+        drawFocusFeedback= "true"
+        vertFocusAnimationStyle = "fixedFocusWrap"
+        rowFocusAnimationStyle = "fixedFocusWrap"
+        showRowCounter="[true]"
+        visible="true"
+       />
+
+      <Video
             id="myVideo"
             width="1920"
             height="1080"
