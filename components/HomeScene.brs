@@ -45,23 +45,24 @@ function playVideo() as void
 end function
 
 function onKeyEvent(key as String, press as Boolean) as boolean
-  print "onplay"
-   if key = "OK"
-        if m.homelist.visible = true
+    if key = "OK"
+      if m.homelist.visible = true
             playVideo()
             m.homelist.visible = false
         end if
-    else if key = "play"
-      if m.Video.control = "pause"
-        m.Video.control = "resume"
+      if m.Video.control="play" then
+        m.Video.control="pause"
       else
-        m.Video.control = "pause"
+        m.Video.control="resume"
       end if
     else if key = "back"
+      if m.Video.visible then
         m.Video.visible = false
         m.homelist.visible = true
         m.homelist.setfocus(true)
         return true
+      end if
+      else
+        return false
     end if
-
 end function
