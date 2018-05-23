@@ -15,4 +15,4 @@ mm_icon_focus_fhd=pkg:/images/focus_sd.png
 #splash_color=#000000
 #splash_min_time=1000
 #splash_min_time=1000
-ui_resolutions=hd, sd, fhd
+ui_resolutions=fhd

@@ -6,7 +6,7 @@ sub init()
     m.homelist.rowFocusAnimationStyle = "floatingfocus"
     m.homelist.rowLabelOffset = [ [0, 20], [0, 20], [0, 20] ]
     m.homelist.showRowLabel = [true, true, true]
-    m.homelist.rowItemSize = [ [536, 308], [536, 308], [536, 308] ]
+    ' m.homelist.rowItemSize = [ [536, 308], [536, 308], [536, 308] ]
     m.homelist.setfocus(true)
 
 end sub
@@ -41,6 +41,7 @@ function playVideo() as void
         m.Video.visible = true
         m.Video.content = Content
         m.Video.control = "play"
+        m.Video.setFocus(true)
     end if
 end function
 
@@ -50,11 +51,6 @@ function onKeyEvent(key as String, press as Boolean) as boolean
             playVideo()
             m.homelist.visible = false
         end if
-      if m.Video.control="play" then
-        m.Video.control="pause"
-      else
-        m.Video.control="resume"
-      end if
     else if key = "back"
       if m.Video.visible then
         m.Video.visible = false
