@@ -16,3 +16,4 @@ mm_icon_focus_fhd=pkg:/images/focus_sd.png
 #splash_min_time=1000
 #splash_min_time=1000
 ui_resolutions=fhd
+confirm_partner_button=1

@@ -1,7 +1,10 @@
 sub init()
     m.itemposter = m.top.findNode("itemPoster")
     m.itemlabel = m.top.findNode("itemLabel")
+    m.top.observeField("itemContent", "showItemDataChanged")
+
 end sub
+
 
 sub showItemDataChanged()
   itemData = m.top.itemContent
@@ -9,8 +12,3 @@ sub showItemDataChanged()
   m.itemlabel.text = itemData.title
 
 end sub
-
-sub showfocus()
-    scale = 1 + (m.top.focusPercent * 0.08)
-    m.itemposter.scale = [scale, scale]
-  end sub

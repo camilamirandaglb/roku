@@ -5,6 +5,7 @@ sub Main()
 
     scene = screen.CreateScene("HomeScene")
 
+    initializeRedoku(screen)
     screen.show()
 
     while(true)
@@ -16,4 +17,16 @@ sub Main()
             end if
         end if
     end while
+end sub
+
+sub initializeRedoku(screen)
+  initialState = {
+        movies: { },
+		    player: {
+			     status: false
+		    }
+    }
+
+  RedokuSetInitialState(initialState, screen)
+
 end sub

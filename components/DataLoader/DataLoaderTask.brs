@@ -1,24 +1,29 @@
 sub init()
-  m.top.functionName="loadData"
+  m.top.functionName="getDataParsed"
 end sub
 
-sub loadData()
+sub getDataParsed()
     info = ReadAsciiFile("pkg:/source/api.json")
     json = ParseJson(info)
 
-    contentNode = CreateObject("roSGNode", "ContentNode")
+    movies = getMoviesFromJson(json)
 
-    for each category in json
-            node = contentNode.CreateChild("ContentNode")
-            node.title = json[category].title
-            for each video in json[category].items
-                createVideoItemData(video,node)
-            end for
-    end for
-
-    m.top.data= contentNode
+    AddMovies(movies)
 
 end sub
+
+function getMoviesFromJson (json as object)
+      contentNode = CreateObject("roSGNode", "ContentNode")
+
+      for each category in json
+              node = contentNode.CreateChild("ContentNode")
+              node.title = json[category].title
+              for each video in json[category].items
+                  createVideoItemData(video,node)
+              end for
+      end for
+      return contentNode
+end function
 
 sub createVideoItemData(video, node)
     item = node.CreateChild("HomeListItemData")
