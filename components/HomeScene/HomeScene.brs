@@ -37,7 +37,7 @@ function onKeyEvent(key as String, press as Boolean) as boolean
       if m.global.state.player.status
         stopPlayer()
         m.homelist.visible = true
-        m.homelist.setFocus(true)
+        m.homelist.setfocus(true)
         m.Video.visible = false
         return true
       else
