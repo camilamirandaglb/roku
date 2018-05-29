@@ -4,29 +4,33 @@
         <field id="rowListContent" type="node" onchange="rowListContentChanged"/>
     </interface>
   <children>
-      <Overhang showClock="true" title= "Week Two Training" optionsAvailable = "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
-      <HomeList
-        id= "homeList"
+      <Overhang showClock="true" title= "Week Two Training" optionsAvailable= "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
+      <HomeList id= "homeList"
         itemComponentName= "HomeListItem"
-        translation="[130,180]"
-        itemSize = "[ 2000, 450 ]"
+        numRows="3"
+        translation= "[50, 150]"
+        itemSize=  "[ 2000, 350 ]"
         showRowLabel= "[ true ]"
+        rowLabelOffset = "[ [0, 15], [0, 15], [0, 15] ]"
         drawFocusFeedback= "true"
         vertFocusAnimationStyle = "fixedFocusWrap"
-        rowFocusAnimationStyle = "fixedFocusWrap"
-        showRowCounter="[true , true, true]"
+        rowFocusAnimationStyle= "fixedFocusWrap"
         visible="true"
-        rowItemSize= "[[536,308], [536,308], [536,308]]"
-        rowHeights= "[1000, 1000 , 1000]"
-        itemSpacing= "[0, 80]"
-        rowItemSpacing= "[[30, 0]]"
+        rowItemSize= "[[500, 285]]"
+        itemSpacing="[0, 80]"
+        rowItemSpacing= " [[30, 0]]"
        />
 
-      <Video
-            id="myVideo"
-            width="1920"
-            height="1080"
-            visible="false" />
+      <Video id="myVideo"   width="1920" height="1080" visible= "false"/>
     </children>
   <script type="text/brightscript" uri="pkg:/components/HomeScene/HomeScene.brs"/>
+  <script type="text/brightscript" uri="pkg:/components/HomeScene/videoplayer.brs"/>
+  <script type="text/brightscript" uri="pkg:/components/HomeScene/reducers.brs"/>
+
+
+  <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/AsyncActions.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/promise.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/action_types.brs"/>
+  <script type="text/brightscript" uri="pkg:/source/actions.brs"/>
 </component>

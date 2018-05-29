@@ -1,64 +1,47 @@
 sub init()
     m.homelist = m.top.FindNode("homeList")
-    m.dataloader = CreateObject("roSGNode","DataLoaderTask")
-    m.dataloader.observeField("data", "onChangeData")
-    m.dataloader.control="RUN"
-    m.homelist.rowFocusAnimationStyle = "floatingfocus"
-    m.homelist.rowLabelOffset = [ [0, 20], [0, 20], [0, 20] ]
-    m.homelist.showRowLabel = [true, true, true]
-    ' m.homelist.rowItemSize = [ [536, 308], [536, 308], [536, 308] ]
-    m.homelist.setfocus(true)
-
-end sub
-
-sub onChangeData()
-  if m.dataloader.data <> invalid
-    showCategories()
-  end if
-end sub
-
-sub showCategories()
-    m.homelist.content = m.dataloader.data
-end sub
-
-
-function playVideo() as void
- print "play video"
     m.Video = m.top.findNode("myVideo")
-    m.Video.visible = false
 
-    row = m.homelist.rowItemFocused[0]
-    col = m.homelist.rowItemFocused[1]
-    selectedContent = m.homelist.content.getChild(row).getChild(col)
+    m.homelist.setfocus(true)
+    RedokuRegisterReducer("movies", moviesReducer)
+    RedokuRegisterReducer("player", playerReducer)
+    RedokuInitialize()
+    m.global.observeField("state", "onStateChange")
+    AsyncLoadMoviesAction()
+end sub
 
-    if selectedContent <> invalid
-        Content = CreateObject("roSGNode", "ContentNode")
-        Content.streamformat = "m3u8"
-        Content.url = selectedContent.video
-        Content.Description = selectedContent.description
-        Content.Title = selectedContent.title
+sub onStateChange()
+    movies = m.global.state.movies.items
+    showMovies(movies)
+end sub
 
-        m.Video.visible = true
-        m.Video.content = Content
-        m.Video.control = "play"
-        m.Video.setFocus(true)
-    end if
+
+sub showMovies(movies)
+    m.homelist.content = movies
+end sub
+
+function getSelectedContent() as object
+      row = m.homelist.rowItemFocused[0]
+      col = m.homelist.rowItemFocused[1]
+      return m.homelist.content.getChild(row).getChild(col)
 end function
+
 
 function onKeyEvent(key as String, press as Boolean) as boolean
     if key = "OK"
-      if m.homelist.visible = true
-            playVideo()
+        if m.homelist.visible
             m.homelist.visible = false
+            playVideo()
         end if
     else if key = "back"
-      if m.Video.visible then
-        m.Video.visible = false
+      if m.global.state.player.status
+        stopPlayer()
         m.homelist.visible = true
-        m.homelist.setfocus(true)
+        m.homelist.setFocus(true)
+        m.Video.visible = false
         return true
-      end if
       else
         return false
+      end if
     end if
 end function
