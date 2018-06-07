@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="HomeScene" extends="Scene" >
+<component name="HomeScreen" extends="Scene" >
     <interface>
         <field id="rowListContent" type="node" onchange="rowListContentChanged"/>
     </interface>
   <children>
-      <Overhang showClock="true" title= "Week Two Training" optionsAvailable= "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
-      <HomeList id= "homeList"
-        itemComponentName= "HomeListItem"
-        numRows="3"
-        translation= "[50, 150]"
-        itemSize=  "[ 2000, 350 ]"
-        showRowLabel= "[ true ]"
-        rowLabelOffset = "[ [0, 15], [0, 15], [0, 15] ]"
-        drawFocusFeedback= "true"
-        vertFocusAnimationStyle = "fixedFocusWrap"
-        rowFocusAnimationStyle= "fixedFocusWrap"
-        visible="true"
-        rowItemSize= "[[500, 285]]"
-        itemSpacing="[0, 80]"
-        rowItemSpacing= " [[30, 0]]"
-       />
 
-      <Video id="myVideo"   width="1920" height="1080" visible= "false"/>
+    <Rectangle
+      color="#DFDFDF"
+      width="1920"
+      height="1080"
+      opacity=".6"
+      translation="[0,0]" />
+
+    <Overhang showClock="true" title= "Week Four Training" optionsAvailable= "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
+
+    <HomeList id= "homeList"/>
+
+    <Video id="myVideo"/>
+
+    <VideoDetailScreen id="VideoDetailScreen" />
+
     </children>
-  <script type="text/brightscript" uri="pkg:/components/HomeScene/HomeScene.brs"/>
-  <script type="text/brightscript" uri="pkg:/components/HomeScene/videoplayer.brs"/>
-  <script type="text/brightscript" uri="pkg:/components/HomeScene/reducers.brs"/>
 
+    <script type="text/brightscript" uri="pkg:/components/HomeScene/HomeScene.brs"/>
 
-  <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>
-  <script type="text/brightscript" uri="pkg:/source/AsyncActions.brs"/>
-  <script type="text/brightscript" uri="pkg:/source/promise.brs"/>
-  <script type="text/brightscript" uri="pkg:/source/action_types.brs"/>
-  <script type="text/brightscript" uri="pkg:/source/actions.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetail.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/HomeScene/reducers.brs"/>
+
+    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/AsyncActions.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/promise.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/action_types.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/actions.brs"/>
 </component>

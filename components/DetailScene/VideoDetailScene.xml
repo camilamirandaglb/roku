@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <component name="VideoDetailScreen" extends="Group" >
+      <interface>
+        <field id="description" type="string" onchange="descriptionChanged" />
+        <field id="title" type="string" />
+        <field id="poster" type="string" onchange="posterChanged" />
+        <field id="backPressed" type="boolean" />
+      </interface>
+      <!-- Left Side of the scene -->
+      <children>
+          <LayoutGroup id="leftLayoutGroup"  >
+            <Poster id="detailPoster" />
+            <LabelList id="options" >
+               <ContentNode role="content">
+                   <ContentNode title="Play Video" />
+                   <ContentNode title="Back" />
+               </ContentNode>
+             </LabelList>
+          </LayoutGroup>
+    <!--Right side of the scene -->
+            <LayoutGroup id="rightLayoutGroup" >
+                <Label id="videoDescription" />
+            </LayoutGroup>
+  </children>
+
+    <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetailScene.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetail.brs"/>
+
+    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/action_types.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/actions.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>
+
+</component>

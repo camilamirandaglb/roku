@@ -5,12 +5,13 @@
 
     </interface>
     <children>
-      <LayoutGroup id="HomeListLayoutGroup"  layoutDirection= "vert" vertAlignment= "top" translation="[0, 0]">
-          <Poster id="itemPoster"    width= "500" height= "290">
+      <LayoutGroup id="HomeListLayoutGroup"  >
+          <Poster id="itemPoster">
           </Poster>
-          <Label id="itemLabel"   height= "60" width = "0" horizAlign= "left" vertAlign= "center" translation= "[318,8]" />
+          <Label id="itemLabel" />
 
       </LayoutGroup>
     </children>
     <script type="text/brightscript" uri="pkg:/components/HomeList/HomeListItem.brs"/>
+    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
 </component>

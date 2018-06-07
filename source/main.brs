@@ -3,7 +3,7 @@ sub Main()
     m.port=CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
 
-    scene = screen.CreateScene("HomeScene")
+    scene = screen.CreateScene("HomeScreen")
 
     initializeRedoku(screen)
     screen.show()
@@ -21,10 +21,16 @@ end sub
 
 sub initializeRedoku(screen)
   initialState = {
-        movies: { },
+        movies: {
+          items: []
+        },
 		    player: {
-			     status: false
-		    }
+			     isPlaying: false
+		    },
+        selectedMovie: {
+          id: ""
+          item: {}
+        }
     }
 
   RedokuSetInitialState(initialState, screen)
