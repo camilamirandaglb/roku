@@ -8,16 +8,16 @@ sub init()
     m.backPressed = m.top.findNode("backPressed")
 
     m.top.observeField("visible", "onVisibleChange")
-    SetStyles()
+
 end sub
 
 sub SetStyles()
-    styles = GetStyles()
-    m.leftLayoutGroup.setfields(styles.classes.videoDetailLeftLayoutGroup)
-    m.rightLayoutGroup.setfields(styles.classes.videoDetailRightLayoutGroup)
-    m.optionList.setfields(styles.classes.labelList)
-    m.description.setfields(styles.classes.videoDescription)
-    m.poster.setfields(styles.classes.videoDetailPoster)
+    styles = getClassesFromJson()
+    m.leftLayoutGroup.setfields(styles.classes.leftLayoutGroup)
+    m.rightLayoutGroup.setfields(styles.classes.rightLayoutGroup)
+    m.optionList.setfields(styles.classes.options)
+    m.description.setfields(styles.classes.description)
+    m.poster.setfields(styles.classes.image)
 end sub
 
 sub descriptionChanged()
