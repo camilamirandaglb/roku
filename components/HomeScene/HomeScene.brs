@@ -19,7 +19,7 @@ sub init()
 end sub
 
 sub SetStyles()
-  
+
     styles = GetStyles()
     m.homelist.setfields(styles.classes.homeList)
     m.VideoDetailScreen.setfields(styles.classes.videoDetail)
