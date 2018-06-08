@@ -4,10 +4,10 @@ sub init()
     m.itemlabel = m.top.findNode("itemLabel")
     m.top.observeField("itemContent", "showItemDataChanged")
 
-    styles = GetStylesClassesFromJson()
-    m.group.setfields(styles.classes.itemLayout)
-    m.itemposter.setfields(styles.classes.image)
-    m.itemlabel.setfields(styles.classes.itemLabel)
+    styles = getClassesFromJson()
+    m.group.setfields(styles.itemLayout)
+    m.itemposter.setfields(styles.image)
+    m.itemlabel.setfields(styles.itemLabel)
 
 end sub
 

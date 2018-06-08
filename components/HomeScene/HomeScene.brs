@@ -11,20 +11,20 @@ sub init()
 
     RedokuInitialize()
 
-    classes = getClassesFromJson()
     m.global.observeField("state", "onStateChange")
     m.VideoDetailScreen.observeField("visible", "onDetailScreenChanged")
 
     AsyncLoadMoviesAction()
+    SetStyles()
 
 end sub
 
 sub SetStyles()
 
-    styles = GetStylesClassesFromJson()
-    m.homelist.setfields(styles.classes.rows)
-    m.VideoDetailScreen.setfields(styles.classes.detail)
-    m.Video.setfields(styles.classes.video)
+    styles = getClassesFromJson()
+    m.homelist.setfields(styles.rows)
+    m.VideoDetailScreen.setfields(styles.detail)
+    m.Video.setfields(styles.video)
 
 end sub
 

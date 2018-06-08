@@ -6,18 +6,12 @@ function getClassesFromJson () as object
 
       classes= CreateObject("roAssociativeArray")
 
-      for each style in json
-          for each item in json[style]
-                classes[style] = item
-          end for
-          print classes.style[video]
+      for each selector in json
+          style = CreateObject("roAssociativeArray")
+          style = json[selector]
+          ' for each item in json[selector]
+          classes[selector] = style
+
       end for
       return classes
 end function
-
-'
-' sub AddStyle (classes, style)
-'       classes.style =
-'
-'
-' end sub

@@ -9,15 +9,17 @@ sub init()
 
     m.top.observeField("visible", "onVisibleChange")
 
+    SetStyles()
 end sub
 
 sub SetStyles()
     styles = getClassesFromJson()
-    m.leftLayoutGroup.setfields(styles.classes.leftLayoutGroup)
-    m.rightLayoutGroup.setfields(styles.classes.rightLayoutGroup)
-    m.optionList.setfields(styles.classes.options)
-    m.description.setfields(styles.classes.description)
-    m.poster.setfields(styles.classes.image)
+
+    m.leftLayoutGroup.setfields(styles.leftLayoutGroup)
+    m.rightLayoutGroup.setfields(styles.rightLayoutGroup)
+    m.optionList.setfields(styles.options)
+    m.description.setfields(styles.description)
+    m.poster.setfields(styles.image)
 end sub
 
 sub descriptionChanged()

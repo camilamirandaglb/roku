@@ -54,11 +54,11 @@
               },
 
     "rightLayoutGroup":{
-              "vertAlignment":"top",
-              "horizAlignment":"left",
-              "translation":"[1000,300]"
+                  "vertAlignment":"top",
+                  "horizAlignment":"left",
+                  "translation":"[1000,300]"
                   },
-                  
+
     "description":{
                     "width":"630",
                     "wrap":true
