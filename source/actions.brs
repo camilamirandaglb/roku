@@ -23,3 +23,10 @@ function selectMovie(movie as object)
 		selectedMovie: movie
 	})
 end function
+
+function LoadStyles(styles as object)
+	RedokuDispatch({
+			type: ActionType().LOAD_STYLES,
+			styles: styles
+	})
+end function

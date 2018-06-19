@@ -16,7 +16,6 @@ function moviesReducer(state as dynamic, action as object) as object
 end function
 
 function playerReducer(state as dynamic, action as object) as object
-      print ">>On player reducer:" action
       if action <> invalid
         if action.type = ActionType().START_PLAYER
             newState = RedokuClone(state)
@@ -43,4 +42,17 @@ function selectedMovieReducer(state as dynamic, action as object) as Object
         end if
      end if
      return state
+end function
+
+function styleReducer(state as dynamic, action as object) as object
+    if action <> invalid then
+        if action.type = ActionType().LOAD_STYLES
+            newState = RedokuClone(state)
+            newState.items = action.styles
+            print "LOAD_STYLES NewState(Redoku) " ; newState.items
+            return newState
+        end if
+    end if
+
+    return state
 end function

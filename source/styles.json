@@ -1,6 +1,5 @@
 {
-  "rows": {
-
+  "rowList_movies": {
             "numRows":"3",
             "translation": "[50, 150]",
             "itemSize": "[ 2000, 350 ]",
@@ -15,24 +14,29 @@
             "rowItemSpacing": " [[30, 0]]"
           },
 
-  "video":{
+    "video":{
 
               "width":"1920",
               "height":"1080",
               "visible":false
           },
 
-  "detail":{
-              "visible":false
-              },
+    "video_image": {
+              "width":"500",
+              "height": "290"
+                   },
+    "video_description":{
+               "width":"630",
+               "wrap":true
+             },
 
-  "itemLayout": {
+    "rowItemLayout": {
                 "layoutDirection": "vert",
                 "vertAlignment":"top",
                 "translation":"[0, 0]"
                 },
 
-    "itemLabel":{
+    "rowItemLabel":{
                   "height": "60",
                   "width": "0",
                   "horizAlign": "left",
@@ -40,27 +44,23 @@
                   "translation": "[318,8]"
                   },
 
-    "leftLayoutGroup":{
+    "video_detail":{
+                  "visible":false
+                  },
+
+    "video_detail_leftLayout":{
                   "translation":"[450,300]"
                       },
 
-    "image": {
-              "width":"500",
-              "height": "290"
-              },
-
-    "options":{
-              "vertFocusAnimationStyle":"fixedFocusWrap"
-              },
-
-    "rightLayoutGroup":{
+    "video_detail_rightLayout":{
                   "vertAlignment":"top",
                   "horizAlignment":"left",
                   "translation":"[1000,300]"
-                  },
+                },
 
-    "description":{
-                    "width":"630",
-                    "wrap":true
-                  }
+    "video_detail_options":{
+              "vertFocusAnimationStyle":"fixedFocusWrap"
+              }
+
+
 }

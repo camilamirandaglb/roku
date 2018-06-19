@@ -13,5 +13,5 @@
       </LayoutGroup>
     </children>
     <script type="text/brightscript" uri="pkg:/components/HomeList/HomeListItem.brs"/>
-    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
+    
 </component>

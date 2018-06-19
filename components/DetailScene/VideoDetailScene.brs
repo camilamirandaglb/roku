@@ -9,17 +9,18 @@ sub init()
 
     m.top.observeField("visible", "onVisibleChange")
 
+
     SetStyles()
 end sub
 
 sub SetStyles()
-    styles = getClassesFromJson()
+    styles = RedokuGetState().styles
 
-    m.leftLayoutGroup.setfields(styles.leftLayoutGroup)
-    m.rightLayoutGroup.setfields(styles.rightLayoutGroup)
-    m.optionList.setfields(styles.options)
-    m.description.setfields(styles.description)
-    m.poster.setfields(styles.image)
+    m.leftLayoutGroup.setfields(styles.items.video_detail_leftLayout)
+    m.rightLayoutGroup.setfields(styles.items.video_detail_rightLayout)
+    m.optionList.setfields(styles.items.video_detail_options)
+    m.description.setfields(styles.items.video_description)
+    m.poster.setfields(styles.items.video_image)
 end sub
 
 sub descriptionChanged()
@@ -47,7 +48,6 @@ end sub
 
 function onKeyEvent(key as String, press as Boolean) as boolean
         isPlaying = RedokuGetState().player.isPlaying
-
         if NOT isPlaying AND key = "OK" then
                 selectedItem = m.optionList.content.getChild(m.optionList.itemFocused).title
                 handleSelectedOption(selectedItem)

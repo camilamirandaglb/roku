@@ -31,6 +31,9 @@ sub initializeRedoku(screen)
           id: ""
           item: {}
         }
+        styles: {
+            items: {}
+        }
     }
 
   RedokuSetInitialState(initialState, screen)

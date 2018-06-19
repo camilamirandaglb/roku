@@ -26,8 +26,6 @@
 
     <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetail.brs"/>
     <script type="text/brightscript" uri="pkg:/components/HomeScene/reducers.brs"/>
-
-    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
     <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>
     <script type="text/brightscript" uri="pkg:/source/AsyncActions.brs"/>
     <script type="text/brightscript" uri="pkg:/source/promise.brs"/>

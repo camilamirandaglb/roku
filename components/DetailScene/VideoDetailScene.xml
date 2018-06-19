@@ -26,8 +26,6 @@
     <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetailScene.brs"/>
     <script type="text/brightscript" uri="pkg:/components/DetailScene/VideoDetail.brs"/>
 
-
-    <script type="text/brightscript" uri="pkg:/source/styles.brs"/>
     <script type="text/brightscript" uri="pkg:/source/action_types.brs"/>
     <script type="text/brightscript" uri="pkg:/source/actions.brs"/>
     <script type="text/brightscript" uri="pkg:/source/redoku.brs"/>

@@ -8,6 +8,7 @@ sub init()
     RedokuRegisterReducer("movies", moviesReducer)
     RedokuRegisterReducer("player", playerReducer)
     RedokuRegisterReducer("selectedMovie", selectedMovieReducer)
+    RedokuRegisterReducer("styles", styleReducer)
 
     RedokuInitialize()
 
@@ -15,17 +16,14 @@ sub init()
     m.VideoDetailScreen.observeField("visible", "onDetailScreenChanged")
 
     AsyncLoadMoviesAction()
-    SetStyles()
+    AsynLoadStylesAction()
 
 end sub
 
-sub SetStyles()
-
-    styles = getClassesFromJson()
-    m.homelist.setfields(styles.rows)
-    m.VideoDetailScreen.setfields(styles.detail)
-    m.Video.setfields(styles.video)
-
+sub setStyles(items)
+    m.homelist.setfields(items.rowList_movies)
+    m.VideoDetailScreen.setfields(items.video_detail)
+    m.Video.setfields(items.video)
 end sub
 
 sub onStateChange()
@@ -49,6 +47,9 @@ sub onStateChange()
             m.Video.visible = false
             createAndOpenDetailScene()
         end if
+    end if
+    if state.styles.count() <> prevState.styles.count() AND state.styles <> invalid then
+            setStyles(state.styles.items)
     end if
 
     'so, let's see if the player is now "playing" to bing up the Video component
