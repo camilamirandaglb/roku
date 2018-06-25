@@ -12,12 +12,12 @@ sub init()
 end sub
 
 sub SetStyles()
-    styles = getClassesFromJson()
-    m.leftLayoutGroup.setfields(styles.classes.leftLayoutGroup)
-    m.rightLayoutGroup.setfields(styles.classes.rightLayoutGroup)
-    m.optionList.setfields(styles.classes.options)
-    m.description.setfields(styles.classes.description)
-    m.poster.setfields(styles.classes.image)
+    styles = GetStyles()
+    m.leftLayoutGroup.setfields(styles.classes.videoDetailLeftLayoutGroup)
+    m.rightLayoutGroup.setfields(styles.classes.videoDetailRightLayoutGroup)
+    m.optionList.setfields(styles.classes.labelList)
+    m.description.setfields(styles.classes.videoDescription)
+    m.poster.setfields(styles.classes.videoDetailPoster)
 end sub
 
 sub descriptionChanged()
