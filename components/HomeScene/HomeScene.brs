@@ -16,15 +16,10 @@ sub init()
     m.VideoDetailScreen.observeField("visible", "onDetailScreenChanged")
 
     AsyncLoadMoviesAction()
-    AsynLoadStylesAction()
+
 
 end sub
 
-sub setStyles(items)
-    m.homelist.setfields(items.rowList_movies)
-    m.VideoDetailScreen.setfields(items.video_detail)
-    m.Video.setfields(items.video)
-end sub
 
 sub onStateChange()
     state= RedokuGetState()
@@ -49,11 +44,18 @@ sub onStateChange()
         end if
     end if
     if state.styles.count() <> prevState.styles.count() AND state.styles <> invalid then
-            setStyles(state.styles.items)
+            AsyncLoadStylesAction(state.styles)
     end if
 
     'so, let's see if the player is now "playing" to bing up the Video component
 
+end sub
+
+sub setStyles()
+    items =  RedokuGetState().styles.items
+    m.homelist.setfields(items.rowList_movies)
+    m.VideoDetailScreen.setfields(items.video_detail)
+    m.Video.setfields(items.video)
 end sub
 
 sub showMovies(movies)

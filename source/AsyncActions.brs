@@ -6,10 +6,8 @@ sub AsyncLoadMoviesAction()
               end function)
 end sub
 
-sub AsynLoadStylesAction()
-    createPromiseFromTask("StylesLoaderTask", invalid, "styles"). then(function(task)
-                 if task.styles <> invalid
-                    LoadStyles(task.styles)
-                end if 
-                    end function)
+sub AsyncLoadStylesAction()
+        createPromiseFromTask("StylesLoaderTask", {styles: m.global.state.styles}).then(function(task)
+                LoadStyles (task.styles)
+            end function)
   end sub
