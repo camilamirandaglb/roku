@@ -17,7 +17,6 @@ sub init()
 
     AsyncLoadMoviesAction()
 
-
 end sub
 
 

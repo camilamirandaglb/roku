@@ -8,7 +8,6 @@ sub init()
     m.group.setfields(styles.items.rowItemLayout)
     m.itemposter.setfields(styles.items.video_image)
     m.itemlabel.setfields(styles.items.rowItemLabel)
-
 end sub
 
 
