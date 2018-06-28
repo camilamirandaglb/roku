@@ -4,10 +4,10 @@ sub init()
     m.itemlabel = m.top.findNode("itemLabel")
     m.top.observeField("itemContent", "showItemDataChanged")
 
-    styles = RedokuGetState().styles
-    m.group.setfields(styles.items.rowItemLayout)
-    m.itemposter.setfields(styles.items.video_image)
-    m.itemlabel.setfields(styles.items.rowItemLabel)
+    styles = RedokuGetState().styles.items
+    m.group.setfields(styles.rowItemLayout)
+    m.itemposter.setfields(styles.video_image)
+    m.itemlabel.setfields(styles.rowItemLabel)
 end sub
 
 

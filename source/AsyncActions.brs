@@ -7,7 +7,7 @@ sub AsyncLoadMoviesAction()
 end sub
 
 sub AsyncLoadStylesAction()
-        createPromiseFromTask("StylesLoaderTask", {styles: m.global.state.styles}).then(function(task)
-                LoadStyles (task.styles)
+        createPromiseFromTask("StylesLoaderTask", "styles").then(function(task)
+                styles = task.styles
             end function)
   end sub

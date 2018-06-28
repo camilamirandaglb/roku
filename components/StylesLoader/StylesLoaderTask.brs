@@ -1,5 +1,6 @@
 sub init()
     m.top.functionName="getStylesParsed"
+    m.top.observeField("styles", "getStylesParsed")
 end sub
 
 sub getStylesParsed()
@@ -7,8 +8,6 @@ sub getStylesParsed()
   json = ParseJson(info)
 
   styles = getStylesFromJson(json)
-
-  LoadStyles(styles)
 end sub
 
 

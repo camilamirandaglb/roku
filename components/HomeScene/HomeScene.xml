@@ -2,6 +2,7 @@
 <component name="HomeScreen" extends="Scene" >
     <interface>
         <field id="rowListContent" type="node" onchange="rowListContentChanged"/>
+        <field id="styles" type="assocarray" onchange="onChangedStyles"/>
     </interface>
   <children>
 

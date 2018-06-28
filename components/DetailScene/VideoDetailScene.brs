@@ -13,13 +13,11 @@ sub init()
 end sub
 
 sub SetStyles()
-    styles = RedokuGetState().styles
-
-    m.leftLayoutGroup.setfields(styles.items.video_detail_leftLayout)
-    m.rightLayoutGroup.setfields(styles.items.video_detail_rightLayout)
-    m.optionList.setfields(styles.items.video_detail_options)
-    m.description.setfields(styles.items.video_description)
-    m.poster.setfields(styles.items.video_image)
+    m.leftLayoutGroup.setfields(styles.video_detail_leftLayout)
+    m.rightLayoutGroup.setfields(styles.video_detail_rightLayout)
+    m.optionList.setfields(styles.video_detail_options)
+    m.description.setfields(styles.video_description)
+    m.poster.setfields(styles.video_image)
 end sub
 
 sub descriptionChanged()

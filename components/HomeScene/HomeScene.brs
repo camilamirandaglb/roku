@@ -3,12 +3,10 @@ sub init()
     m.Video = m.top.findNode("myVideo")
     m.VideoDetailScreen = m.top.findNode("VideoDetailScreen")
 
-
     m.homelist.setfocus(true)
     RedokuRegisterReducer("movies", moviesReducer)
     RedokuRegisterReducer("player", playerReducer)
     RedokuRegisterReducer("selectedMovie", selectedMovieReducer)
-    RedokuRegisterReducer("styles", styleReducer)
 
     RedokuInitialize()
 
@@ -16,7 +14,7 @@ sub init()
     m.VideoDetailScreen.observeField("visible", "onDetailScreenChanged")
 
     AsyncLoadMoviesAction()
-
+    AsyncLoadStylesAction()
 end sub
 
 
@@ -42,19 +40,15 @@ sub onStateChange()
             createAndOpenDetailScene()
         end if
     end if
-    if state.styles.count() <> prevState.styles.count() AND state.styles <> invalid then
-            AsyncLoadStylesAction(state.styles)
-    end if
 
-    'so, let's see if the player is now "playing" to bing up the Video component
+    ' so, let's see if the player is now "playing" to bing up the Video component
 
 end sub
 
-sub setStyles()
-    items =  RedokuGetState().styles.items
-    m.homelist.setfields(items.rowList_movies)
-    m.VideoDetailScreen.setfields(items.video_detail)
-    m.Video.setfields(items.video)
+sub setStyles(styles)
+    m.homelist.SetFields(styles.items.rowList_movies)
+    m.VideoDetailScreen.setfields(styles.items.video_detail)
+    m.Video.setfields(styles.items.video)
 end sub
 
 sub showMovies(movies)
