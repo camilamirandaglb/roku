@@ -2,24 +2,26 @@ sub init()
     m.homelist = m.top.FindNode("homeList")
     m.Video = m.top.findNode("myVideo")
     m.VideoDetailScreen = m.top.findNode("VideoDetailScreen")
+    m.top.appendChild(m.homelist)
 
 
     m.homelist.setfocus(true)
+    m.homelist.visible=true
+
     RedokuRegisterReducer("movies", moviesReducer)
     RedokuRegisterReducer("player", playerReducer)
     RedokuRegisterReducer("selectedMovie", selectedMovieReducer)
 
     RedokuInitialize()
 
-    SetStyles()
+
     m.global.observeField("state", "onStateChange")
     m.VideoDetailScreen.observeField("visible", "onDetailScreenChanged")
-
+    SetStyles()
     AsyncLoadMoviesAction()
 end sub
 
 sub SetStyles()
-
     styles = GetStyles()
     m.homelist.setfields(styles.classes.homeList)
     m.VideoDetailScreen.setfields(styles.classes.videoDetail)
@@ -56,11 +58,12 @@ end sub
 
 sub showMovies(movies)
     m.homelist.content = movies
+    m.homelist.setFocus(true)
 end sub
 
 function getSelectedContent() as Object
-    row = m.homelist.rowItemFocused[0]
-    col = m.homelist.rowItemFocused[1]
+    row = m.homelist.itemFocused[0]
+    col = m.homelist.itemFocused[1]
     selectedItem = m.homelist.content.getChild(row).getChild(col)
     return selectedItem
 end function
@@ -73,7 +76,7 @@ end sub
 function onKeyEvent(key as String, press as Boolean) as boolean
     handled = false
 
-    if key = "OK"
+    if key = "options"
         if NOT m.VideoDetailScreen.backpressed
            selectedContent()
         end if

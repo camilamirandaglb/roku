@@ -3,19 +3,12 @@ function GetStyles() as Object
         classes: {
             ' HomeScene
             homeList: {
-                itemComponentName: "HomeListItem",
-                numRows:"3",
-                translation: "[50, 150]",
-                itemSize: "[ 2000, 350 ]",
-                showRowLabel: "[ true ]",
-                rowLabelOffset: "[ [0, 15], [0, 15], [0, 15] ]",
-                drawFocusFeedback:true,
-                vertFocusAnimationStyle:"fixedFocusWrap",
-                rowFocusAnimationStyle: "fixedFocusWrap",
-                visible: true,
-                rowItemSize:"[[500, 285]]",
-                itemSpacing:"[0, 80]",
-                rowItemSpacing: " [[30, 0]]"
+                    translation : "[ 130, 170 ]",
+                    basePosterSize:"[ 512, 288 ]",
+                    vertFocusAnimationStyle:"fixedFocusWrap",
+                    itemSpacing:"[10, 10]",
+                    columnSpacings:"[10,10]",
+                    numColumns:"3"
             },
             video: {
                    width:"1920",
@@ -54,8 +47,8 @@ function GetStyles() as Object
             },
 
             videoDetailPoster: {
-                width:"480",
-                height:"320"
+                width:"500",
+                height: "290"
             },
 
             labelList: {

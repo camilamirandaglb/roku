@@ -14,7 +14,8 @@
 
     <Overhang showClock="true" title= "Week Four Training" optionsAvailable= "true" showOptions="true" logoUri="pkg:/images/focus_sd_logo.png" />
 
-    <HomeList id= "homeList"/>
+    <HomeList id="homeList"
+        />
 
     <Video id="myVideo"/>
 
