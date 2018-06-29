@@ -8,7 +8,7 @@ sub init()
     m.backPressed = m.top.findNode("backPressed")
 
     m.top.observeField("visible", "onVisibleChange")
-
+    SetStyles()
 end sub
 
 sub SetStyles()
