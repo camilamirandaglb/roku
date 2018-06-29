@@ -12,10 +12,10 @@ sub getDataParsed()
 
 end sub
 
-function getMoviesFromJson (json as object)
+function getMoviesFromJson (json as object) as object
 
       contentNode = CreateObject("roSGNode", "ContentNode")
-    
+
       for each category in json
               node = contentNode.CreateChild("ContentNode")
               node.title = json[category].title
